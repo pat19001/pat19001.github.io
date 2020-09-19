@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   line-height: 1.5;
-  background-color: cornsilk;
+  background-color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #index-main {
@@ -45,7 +45,7 @@ footer p.legal {
   font-size: .9em;
 }
 footer p.highlight {
-  color: yellow;
+  color: #ff8800;
   font-size: .8em;
   margin-top: 0;
 }
