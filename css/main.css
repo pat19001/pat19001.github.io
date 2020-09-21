@@ -15,15 +15,18 @@ header, footer{
   border-radius: 15px;
 }
 header h1{
-  font-size: 32px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
   padding-left: 95px;
-
 }
 main{
   padding: 0 15px;
 }
 main h2{
   border-bottom: 1px solid black;
+}
+main, footer{
+  font-family: 'Raleway', sans-serif;
 }
 .profile{
   float: right;
