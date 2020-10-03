@@ -1,0 +1,129 @@
+body {
+  font-family: Arial;
+  max-width: 390px;
+  margin: 20px auto;
+  background-color: #cfcfcf;
+  box-shadow: 0px 0px 4px gray;
+  border-radius: 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.7fr;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.name {
+  grid-column: 4/5;
+  text-align: center;
+  margin: -11px 10px 0 0;
+  font-size: 11px;
+}
+
+.mobile {
+  grid-column: 1/2;
+  color: #1e4178a8;
+  margin: -2px 0 13px 32px;
+  font-size: 10px;
+}
+.delta-logo {
+  border-radius: 10px;
+  margin: 15px 0 4px 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #001b36;
+  color: white;
+  padding: 13px;
+  justify-items: center; 
+  align-items: center;
+}
+
+.container p{
+  color: #405b76;
+  font-size: 50%;
+}
+
+main .details{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;  
+  justify-items: center; 
+  align-items: center;
+  background-color: #f1f1f1; 
+}
+
+#bos{
+  grid-column: 3 ;
+  grid-row: 2;
+}
+
+#depart{
+  margin-bottom: -11px;
+}
+
+#den{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#denver{
+  grid-column: 1 / 2;
+  grid-row: 0 / 1;
+  margin-top: -11px;
+}
+
+#boston{
+  grid-column: 3;
+  grid-row: 3;
+  margin-top: -10px;
+}
+
+#arrival{
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  margin-bottom: -11px;
+}
+
+#planelogo{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.details p{
+  margin-top: -20px;
+}
+
+.details h6{
+  font-size: 50%;
+  margin-bottom: 10px;
+}
+
+.details{
+  color: #001b36;
+}
+
+.barcode-img{
+  text-align: center;
+  background-color: white;
+}
+
+#barcode{
+ padding: 10px
+}
+
+footer{
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+footer p{
+  color: #405b76
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 60%;
+}
