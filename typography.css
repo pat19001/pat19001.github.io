@@ -1,0 +1,167 @@
+html {
+  max-width: 100%;
+  background-color: #303132;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #303132;
+  color: white;
+  max-width: 100%;
+
+}
+
+header {
+  max-width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  border: 5px solid #D98C5F;
+  background-color: #F2F2F2;
+  color: #D98C5F;
+}
+
+h1 {
+  padding: 25px 25px;
+  text-align: center;
+}
+
+nav {
+  margin: 0 auto;
+  padding: 1em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 100%;
+  background-color: #D98C5F;
+}
+
+li.audience {
+  background-color: #D98C5F;
+  text-decoration: none;
+}
+
+li.color {
+  background-color: #D98C5F;
+  text-decoration: none;
+}
+
+li.type {
+  background-color: #D98C5F;
+  text-decoration: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active,
+nav a:focus {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+nav li:hover {
+  background-color: #BB8152;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#menu {
+  display: grid;
+  max-width: 100%;
+  margin: 0 0;
+  list-style: none;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  max-width: 100%;
+  background-color: #F2F2F2;
+  border: 5px solid #D98C5F;
+  color: #D98C5F;
+
+}
+
+.type-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+
+.site1,
+.h2,
+.h3,
+.h4,
+.sample1,
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.sample2,
+.sample3,
+.sample4,
+.head2,
+.headr2,
+.hr3,
+.h24,
+.sample5,
+.hc4,
+.hr4,
+.hr5,
+.hc4,
+.p1,
+.p2,
+.p3,
+.p4 {
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.sample1 {
+  background-color: #D98C5F;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 34px;
+}
+
+.sample2 {
+  background-color: #303132;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+}
+
+.sample3 {
+  background-color: #BB8152;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.sample4 {
+  background-color: #F2F2F2;
+  color: #D98C5F;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.sample5 {
+  background-color: #F2F2F2;
+  color: #D98C5F;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 390px) {
+  .type-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+  }
