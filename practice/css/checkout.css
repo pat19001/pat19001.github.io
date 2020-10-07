@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 20px;
+}
+.order-summary-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+.order-summary-card h1,
+p {
+  grid-column: 1 / 2;
+}
+.order-summary-card h1 {
+  font-family: "Open Sans", sans-serif;
+}
+.order_summary {
+  color: grey;
+}
+.payment-details-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+.payment-details-card h2,
+h3 {
+  grid-column: 1 / 2;
+  font-family: "Open Sans", sans-serif;
+}
+.payment-details-card p {
+  font-family: "Roboto", sans-serif;
+}
+.payment-details-card h2 {
+  color: gray;
+}
+.next {
+  background-color: #1c6ce5;
+  color: white;
+  border-radius: 25px;
+}
+.cancel {
+  color: #1c6ce5;
+  border: none;
+}
