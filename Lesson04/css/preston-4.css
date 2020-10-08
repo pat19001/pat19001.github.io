@@ -76,20 +76,39 @@ nav {
 .location {
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
+  text-align: center;
+}
+
+.hero {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  border: 1px dotted gray;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
 }
 
 .summ {
   font-family: 'Quicksand', sans-serif;
   font-size: 12px;
+  font-style: italic;
+  border: 1px dotted gray;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
 }
 
 .fiveday {
   font-family: 'Quicksand', sans-serif;
   font-size: 12px;
+  font-style: italic;
+  border: 1px dotted gray;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
 }
-.heroimg{
-  padding:0 0;
-}
+
 footer {
   padding: 5px 15px;
   background-color: #D98C5F;
@@ -107,12 +126,34 @@ footer ul {
   list-style: none;
   padding: 0;
 }
-.social{
+
+.social {
   visibility: hidden;
- }
- .locationmap{
-   align-items: center;
- }
+}
+
+.social img {
+  height: 36px;
+  width: 36px;
+}
+
+.locationmap {
+  align-items: center;
+  border: 1px dashed gray;
+}
+.footerbar {
+  clear:both;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+.footerbar p.legal {
+  margin-bottom: 9px;
+  font-size: .9em;
+}
+.footerbar p.highlight {
+  color: white;
+  font-size: .8em;
+  margin-top: 0;
+}
 
 /* Media Query for medium+ views */
 @media only screen and (min-width: 32.5em) {
@@ -139,40 +180,55 @@ footer ul {
     width: 80px;
   }
 }
+
 /* Media Query for Large views */
-@media only screen and (min-width:768px){
-  header{
+@media only screen and (min-width:768px) {
+  header {
     margin: 0 6em;
     justify-content: left;
-  }
-  nav{
-    max-width:100%;
-    padding: 0 4em;
-  }
-  #content{
-    padding: 0 6em;
-  }
-  footer{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 28px;
   }
 
-  .locationmap{
+  nav {
+    max-width: 100%;
+    padding: 0 50px;
+  }
+
+  #content {
+    padding: 0 6em;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 12em;
+  }
+
+  .locationmap {
     grid-column: 1;
     grid-row: 1/3;
   }
-  footer h1{
+
+  footer h1 {
     grid-column: 2;
-    margin:0 0;
+    margin: 0 0;
   }
-  footer ul{
+
+  footer ul {
     grid-column: 2;
   }
-  .contact{
+
+  .contact {
     grid-column: 2;
   }
-  .social{
+
+  .social {
     grid-column: 2;
     visibility: visible;
+  }
+
+  .social img {
+    height: 36px;
+    width: 36px;
   }
 }
