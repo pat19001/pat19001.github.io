@@ -8,13 +8,14 @@
   <meta name='description' content="Weather Site for WDD230">
   <link href='css/preston-5.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
   <script src='js/preston-5.js'></script>
 </head>
 
 <body>
   <main>
     <header>
-      <picture><img src="images/iconfinder_weather_1054936.png" alt='Cloud Logo'></picture>
+      <picture><img src="images/iconfinder_weather_1054936.png" alt='Cloud Logo' class="cloudLogo"></picture>
       <secion class="headings">
         <h1>Storms a-Brewin'</h1>
         <div class="motto">"There will be no rain on your parade"</div>
@@ -36,13 +37,46 @@
         <h1>Preston, Idaho</h1>
       </section>
       <section class="hero">
-        <h3>Hero Image w/Weather Summary</h3>
+        <div class="hero-container">
+          <img class='hero-image' src="images/country_side.jpg"
+            alt="scenic-view-of-agricultural-field-against-sky-during-sunset">
+          <div class="top-left">
+            <p class='sum'>Weather Summary</p>
+            <p><br> Currently: Sunny<br> High: 76º<br> Wind Chill: ºF<br> Humidity: 69% <br> Windspeed: 5mph</p>
+          </div>
+        </div>
       </section>
       <section class='fiveday'>
         <h3>Five Day Weather Forecast</h3>
+        <div class="five-day-wrapper">
+          <section class="five-day-container">
+            <div class="day">
+              <p class="weekday">Mon</p>
+              <p class="temp">70&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Tues</p>
+              <p class="temp">65&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Wed</p>
+              <p class="temp">64&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Thurs</p>
+              <p class="temp">58&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Fri</p>
+              <p class="temp">45&#8457;</p>
+            </div>
+          </section>
+        </div>
       </section>
       <section class="summ">
         <h3>Article</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate beatae excepturi sequi accusamus dignissimos pariatur dolore quis ullam, tempora corporis, nostrum totam repellendus porro quos consequatur nesciunt quam sed?</p>
+        <img class="article_photo" src="images/articlephoto.jpg" alt="positive-diverse-people-making-faces-at-camera">
       </section>
     </div>
   </main>
@@ -59,7 +93,7 @@
       <a href='https://facebook.com'> <img src='images/facebook.png'></a>
       <a href='https://twitter.com'> <img src='images/twitter.png'></a>
     </section>
-    <img class='locationmap' src='#' alt="location map">
+    <img class='locationmap' src='images/mapImage.jpg' alt="location map">
     <section class="footerbar">
       <p class="legal">&copy; <span id="copyrightyear"></span> | Holly Patterson | Idaho | <a
           href="https://www.byui.edu/online">BYUI Online Learning</a></p>
