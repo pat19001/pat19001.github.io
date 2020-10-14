@@ -1,4 +1,22 @@
 /* Small/Phone View ***************/
+html{
+margin: 0 auto;
+}
+#banner{
+  text-align: center;
+  background-color: #516073;
+  padding: 20px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#D98C5F;
+  border-radius: 10px;
+}
+#banner:hover{
+  background-color: #D98C5F;
+  color:#516073;
+}
+.hidden{
+  display:none;
+}
 header {
   display: flex;
   max-width: 760px;
@@ -232,17 +250,14 @@ footer ul {
   }
 
   .article_photo {
-    max-width: 35%;
+    max-width: 25%;
     float: right;
     margin-right: 15px;
     width: 150px;
     height: 100px;
     border-radius: 5px;
-    background-color: rgb(207, 232, 220);
-    padding: 1em;
   }
 }
-
 
 footer {
   display: grid;
@@ -266,10 +281,14 @@ footer h1 {
   max-width: 75%;
   justify-self: center;
 }
-}
+
 
 /* Media Query for Large views */
 @media only screen and (min-width:768px) {
+  body{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
   header {
     margin: 0 6em;
     justify-content: left;
