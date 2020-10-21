@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
+  <title>Storms a-Brewin'</title>
+  <meta name='description' content="Weather Site for WDD230">
+  <link href='css/preston-6.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src='js/preston-6.js'></script>
+</head>
+
+<body>
+  <div id="banner" class="hidden">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city pavilion. </div>
+  <br>
+  <main>
+    <header>
+      <picture><img src="images/iconfinder_weather_1054936.png" alt='Cloud Logo' class="cloudLogo"></picture>
+      <secion class="headings">
+        <h1>Storms a-Brewin'</h1>
+        <div class="motto">"There will be no rain on your parade"</div>
+      </secion>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section class='location'>
+        <h1>Preston, Idaho</h1>
+      </section>
+      <section class="hero">
+        <div class="hero-container">
+          <picture>
+            <source media="(max-width: 300px)" srcset=" images/wdd230_image_300.jpg">
+            <p class="overlay-s">Small</p>
+            <source media="(max-width: 700px)" srcset=" images/wdd230_image_700.jpg">
+            <p class="overlay-m">Medium</p>
+            <source media="(max-width: 1000px)" srcset=" images/wdd230_image_1000.jpg">
+            <p class="overlay-l">Large</p>
+            <img class='hero-image' sizes="50vw" src="images/wdd230_image_franklinOriginal.jpeg" alt="scenic-view">
+          </picture>
+          <div class="top-left">
+            <p class='sum'>Weather Summary</p><br>
+            <p>Currently: Sunny</p>
+            <p class="temp">High: 76º</p>
+            <p>Wind Chill: ºF<br></p>
+            <p>Humidity: 69% <br></p>
+            <p class="speed">Windspeed: 5mph</p>
+          </div>
+        </div>
+      </section>
+      <section class='fiveday'>
+        <h3>Five Day Weather Forecast</h3>
+        <div class="five-day-wrapper">
+          <section class="five-day-container">
+            <div class="day">
+              <p class="weekday">Mon</p>
+              <p class="temp">70&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Tues</p>
+              <p class="temp">65&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Wed</p>
+              <p class="temp">64&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Thurs</p>
+              <p class="temp">58&#8457;</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Fri</p>
+              <p class="temp">45&#8457;</p>
+            </div>
+          </section>
+        </div>
+      </section>
+      <img class="article_photo" src="images/articlephoto.jpg" alt="positive-diverse-people-making-faces-at-camera">
+      <section class="summ">
+        <h3>Article</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate beatae excepturi sequi accusamus
+          dignissimos pariatur dolore quis ullam, tempora corporis, nostrum totam repellendus porro quos consequatur
+          nesciunt quam sed?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet vero laborum! Inventore excepturi et,
+          quidem laudantium obcaecati numquam odit nam sequi accusamus nulla porro explicabo recusandae itaque aliquam
+          reprehenderit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iure, quod velit soluta praesentium voluptas
+          suscipit a ad, aliquam, laborum exercitationem! Nam fuga illo accusamus voluptatibus cumque consequuntur
+          dignissimos placeat.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <h1>Contact Information</h1>
+    <section class='contact'>
+      <ul>
+        <li class='email' href='#'>&#9993; stormsabrewin@gmail.com</li>
+        <li class='phone' href='#'>&#9742; 888.888.8888</li>
+      </ul>
+    </section>
+    <section class='social'>
+      <a target="_blank" href='https://instagram.com'> <img src='images/instagram.png'></a>
+      <a target="_blank" href='https://facebook.com'> <img src='images/facebook.png'></a>
+      <a target="_blank" href='https://twitter.com'> <img src='images/twitter.png'></a>
+    </section>
+    <img class='locationmap' src='images/mapImage.jpg' alt="location map">
+    <section class="footerbar">
+      <p class="legal">&copy; <span id="copyrightyear"></span> | Holly Patterson | Idaho | <a
+          href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <p class="highlight">Last Updated <span id="lastupdated"></span></p>
+    </section>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>
