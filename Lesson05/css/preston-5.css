@@ -175,6 +175,7 @@ nav {
   padding: 15px;
   box-shadow: 3px 3px 10px #88888879;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .article_photo {
