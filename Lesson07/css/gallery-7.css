@@ -43,6 +43,10 @@ nav {
   list-style: none;
   padding: 0 0;
 }
+.navigation .activeP a{
+  background-color: #BB8152;
+  color: white;
+}
 
 .navigation li:first-child {
   display: block;
@@ -88,17 +92,14 @@ picture:hover {
   box-shadow: 0 0 50px #333;
 }
 /* When you mouse over the container, fade in the overlay title */
-picture:hover figcaption {
-opacity: 1;
-}
 figcaption {
 box-sizing: border-box;
 background: rgb(0, 0, 0);
 background: rgba(0, 0, 0, 0.5); /* Black see-through */
-color: #f1f1f1;
+color: black;
 width: 100%;
 transition: .5s ease;
-opacity:0;
+opacity:1;
 color: white;
 font-size: 20px;
 padding: 20px;
@@ -209,7 +210,23 @@ footer ul {
     max-width: 100%;
     box-sizing: border-box;
   }
-
+  figcaption {
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    }
+  picture:hover figcaption {
+    opacity: 1;
+    }
 
   footer {
     display: grid;
