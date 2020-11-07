@@ -20,7 +20,7 @@ table{
   margin: 0 auto;
 }
 
-tr:nth-child(0) {
+thead td{
   background: #7fb9c2;
   font-weight: bold;
   padding:5px;
@@ -30,7 +30,7 @@ th{
   background-color: #628ca6;
   color:white;
   font-weight: bold;
-  /* font-size: 10px; */
+  font-size: 24px;
 }
 td{
   box-sizing: border-box;
