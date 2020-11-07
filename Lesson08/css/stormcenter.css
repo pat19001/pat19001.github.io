@@ -1,18 +1,11 @@
 /* Small/Phone View ***************/
-html {
-  margin: 0 auto;
-}
-body{
-  margin:0;
-}
-
 #banner {
   text-align: center;
   background-color: #516073;
   padding: 20px 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #D98C5F;
-  border-radius: 10px;
+  
 }
 
 #banner:hover {
@@ -26,7 +19,7 @@ body{
 
 header {
   display: flex;
-  max-width: 760px;
+  max-width: 100%;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -94,56 +87,101 @@ nav {
   background-color: #BB8152;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-    <ul class="navigation responsive">
-  */
 .responsive li {
   display: block;
 }
-#content{
-  align-self: center;
-  max-width: 100%;
-  margin:0 auto;
-}
-form h1{
+
+.title {
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  justify-self: center;
+  background-color: #D98C5F;
+  border-radius: 5px;
+  margin: 15px;
+  width: 85%;
   text-align: center;
-  font-family:'Quicksand', sans-serif;
-  max-width: 100%;
 }
+
+.content {
+  display: grid;
+  justify-items: center;
+}
+
 form {
-  display: inline-block;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  margin: 50px;
+  width: 75%;
+  box-shadow: 5px 5px 5px lightslategray;
+  background-color: dimgrey;
 }
-label{
-  display: inline-block;
-  float: left;
-  clear: left;
-  width: 310px;
-  max-width:100%;
-  padding:5px 5px;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-  border:1px solid darkgray;
+
+p {
+  margin: 0;
 }
+
+label {
+  margin: 15px;
+  padding: 10px 30px;
+  align-content: center;
+  font-family: 'Lato';
+  background-color: dimgrey;
+  color: white;
+}
+
+input:hover {
+  background-color: silver;
+}
+
 input {
-  display: inline-block;
-  float: right;
-  padding: 2px;
+  height: 25px;
+  color: gray;
+  padding: 5px;
+  max-width: 100%;
 }
-#danger1, #danger2, #danger3{
-  display: inline-block;
-  float: left;
-  padding:none;
+
+#stype {
+  position: sticky;
 }
-.selection label{
-  border:none;
+
+#stSeverity {
+  background: #D98C5F;
 }
-#submit{
-  width: 100px;
-  justify-content: center;
+
+#severity {
+  background: #D98C5F;
+}
+
+select {
+  height: 25px;
+}
+
+.name,
+.email,
+.phone,
+.zip,
+.date,
+.type,
+.range,
+.stormregion {
+  display: grid;
+  max-width: 100%;
+}
+
+.selection {
+  justify-items: center;
+}
+
+label .danger1,
+.danger2,
+.danger3 {
+  padding: 1px;
+ 
+}
+
+.textarea {
+  display: grid;
 }
 
 footer {
@@ -192,7 +230,7 @@ footer ul {
   margin-top: 0;
 }
 
-/* Media Query for medium+ views */
+/* -------------------------------------------Media Query for medium+ views ------------------------------------------------- */
 @media only screen and (min-width: 32.5em) {
   .navigation {
     display: flex;
@@ -213,32 +251,10 @@ footer ul {
     display: none;
   }
 
-  #content{
-    align-self: center;
-    margin:0 auto;
-    padding: 25px;
-  }
-  form h1{
-    margin: 0;
+  p {
     padding-bottom: 10px;
   }
-  form{
-    align-self: center;
-    max-width: 100%;
-    margin-left: 75px;
-    border: 1px solid darkgray;
-    font-size: 14px;
-  }
-  label{
-    display: inline-block;
-    float: left;
-    clear: left;
-    text-align: left;
-    padding: 10px;
-  }
-  #danger1, #danger2, #danger3{
-    width:20px;
-  }
+
 
   footer {
     display: grid;
@@ -264,90 +280,107 @@ footer ul {
   }
 }
 
-  /* Media Query for Large views */
-  @media only screen and (min-width:1000px) {
-    body {
-      max-width: 1024px;
-      margin: 0 auto;
-    }
-    .cloudLogo{
-      width:74px;
-      height:74px;
-    }
-
-    header {
-      margin: 0 6em;
-      justify-content: left;
-    }
-    .headings{
-      font-size: 25px;
-    }
-    .motto{
-      font-size: 18px;
-    }
-
-    nav {
-      max-width: 100%;
-    }
-
-    .navigation{
-      font-size: 20px;
-    }
-    #content{
-      align-self: center;
-      margin:0 auto;
-      padding: 35px;
-    }
-    form{
-      align-self: center;
-      max-width: 100%;
-      margin-left: 219px;
-      padding: 20px;
-      border: 1px solid darkgray;
-    }
-    label{
-      font-size: 18px;
-      display: inline-block;
-      float: left;
-      clear: left;
-      width: 500px;
-      text-align: left;
-      padding: 10px;
-    }
-    input{
-      width:350px;
-      height: 25px;
-    }
-    #danger1, #danger2, #danger3{
-      width:20px;
-    }
-
-    footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 15px 8em;
-    }
-
-    footer h1 {
-      margin: 0 0;
-      padding: 0 10px;
-    }
-
-    footer ul {
-      grid-column: 2;
-    }
-
-    .contact {
-      padding: 0 10px;
-    }
-
-    .social {
-      visibility: visible;
-      padding: 0 10px;
-    }
-
-    .social img {
-      height: 36px;
-      width: 36px;
-    }
+/* ----------------------------------------------------------------Media Query for Large views----------------------------------------------- */
+@media only screen and (min-width:1000px) {
+  .cloudLogo {
+    width: 74px;
+    height: 74px;
   }
+
+  header {
+    margin: 0 6em;
+    justify-content: left;
+  }
+
+  .headings {
+    font-size: 25px;
+  }
+
+  .motto {
+    font-size: 18px;
+  }
+
+  nav {
+    max-width: 100%;
+  }
+
+  .navigation {
+    font-size: 20px;
+  }
+
+  form {
+    font-size: 18px;
+    box-shadow: 10px 10px 10px lightslategray;
+  }
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  input {
+    font-size: 20px;
+    height: 55px;
+  }
+
+  select {
+    height: 55px;
+  }
+
+  #danger2,
+  #danger3,
+  #danger1 {
+    padding: 1px;
+    height: 25px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer h1 {
+    margin: 0 0;
+    padding: 0 10px;
+  }
+
+  footer ul {
+    grid-column: 2;
+  }
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  .social {
+    visibility: visible;
+    padding: 0 10px;
+  }
+
+  .social img {
+    height: 36px;
+    width: 36px;
+  }
+ 
+}
+#content{
+  display:grid;
+  justify-content: center;
+  text-align: center;
+  padding:10px;
+  background-color: dimgrey;
+  max-width: 100%;
+  height: 400px;
+  justify-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section{
+  margin: 30px;
+  padding: 30px;
+  height:45%;
+  background-color: #D98C5F;
+  color:white;
+  border-radius: 5px;
+}
+
+

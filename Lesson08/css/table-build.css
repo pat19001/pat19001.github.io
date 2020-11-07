@@ -3,7 +3,7 @@ table {
   border-collapse: collapse;
   font-family: Ubuntu, sans-serif;
   border-color: lightgray;
-  width: 175px;
+  font-size: 32px;
 }
 tr:nth-child(odd){
   background-color:#e7ffed; 
@@ -11,39 +11,44 @@ tr:nth-child(odd){
 tr:nth-child(even){
   background-color: #e7f0ed;
 }
-
-
-table, caption{
-  box-shadow: 10px 5px 5px #628ca6;
+h1{
+  text-align: center;
 }
-caption{
+
+table{
+  box-shadow: 10px 5px 5px #628ca6;
+  margin: 0 auto;
+}
+
+tr:nth-child(0) {
   background: #7fb9c2;
   font-weight: bold;
   padding:5px;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 th{
   background-color: #628ca6;
   color:white;
   font-weight: bold;
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 td{
   box-sizing: border-box;
   text-align: center;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 30px;
+  /* font-size: 10px; */
 }
-tr:nth-child(5) td:nth-child(3){
+tr:nth-child(4) td:nth-child(3){
 background-color:#628ca6;
 color:white;
 }
-tr:nth-child(6) td:nth-child(1){
+tr:nth-child(5) td:nth-child(1){
   font-style: italic;
 }
 tfoot td{
   background-color: #7fb9c2;
   padding:5px;
-  font-size: 8px;
+  font-size: 25px;
 }
 
