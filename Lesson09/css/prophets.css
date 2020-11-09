@@ -1,0 +1,48 @@
+.cards{
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  }
+  section{
+    margin: 1px 1px;
+    padding:20px 40px ;
+    background-color: lightsteelblue;
+    border: 2px solid slategrey;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+  }
+  h1, h2{
+    color: slateblue;
+    text-shadow: 1px 1px 1px gray;
+  }
+  p{
+    font-size: 13px;
+  }
+  img{
+    max-width: 55%;
+    box-shadow: 5px 5px 5px 5px lightslategrey;
+  }
+  footer{
+    text-align: center;
+    background-color: lightsteelblue;
+    border: 2px solid slategrey;
+    padding:10px;
+    max-width: 100%;
+  }
+
+@media only screen and (min-width:768px) {
+.cards{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+section{
+  margin: 1px 1px;
+  padding:10px;
+}
+img{
+  max-width: 75%;
+}
+}
