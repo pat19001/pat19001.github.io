@@ -1,4 +1,4 @@
-const requestURL = 'https://pipl.ir/v1/getPerson';
+const requestURL = 'https://pipl.ir/v1/getPerson.json';
 
 fetch(requestURL)
   .then(function (response) {
