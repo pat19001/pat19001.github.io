@@ -1,0 +1,29 @@
+{
+  "towns": [
+    {
+      "name": "Preston",
+      "motto": "23 December 1805",
+      "founded": "1900",
+      "population": 5354,
+      "elevation": 4718,
+      "rainfall": 17.47,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+    },
+    {
+      "name": "Soda Springs",
+      "motto": "The outdoors at your front door",
+      "founded": "1919",
+      "population": 3058,
+      "rainfall": 15.71,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+    },
+    {
+      "name": "Fish Haven",
+      "motto": "23 December 1805",
+      "founded": "1954",
+      "population": 299,
+      "rainfall": 17.91,
+      "imageurl": "https://unsplash.com/photos/LVkyfLryeng"
+    }
+  ]
+}
