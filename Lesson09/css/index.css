@@ -113,6 +113,10 @@ nav {
   max-width: 75%;
 }
 
+h2{
+  text-shadow:2px 2px #cd6a31;
+}
+
 p {
   font-family: 'Lato', sans-serif;
 }
@@ -308,6 +312,9 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  h2{
+    text-shadow: none;
+  }
 
   /* ----------------- Preston Card ---------------- */
 
@@ -322,7 +329,7 @@ footer ul {
     background-color:#f7e7de;
     color:#cd6a31;
     border:1px solid #D98C5F;
-    font-style: italic;;
+    text-shadow:2px 2px #f0d0be;
   }
 
   .pimage {
@@ -343,6 +350,7 @@ footer ul {
     background-color:#f7e7de;
     color:#cd6a31;
     border:1px solid #D98C5F;
+    text-shadow:2px 2px #f0d0be;
   }
   .fimage{
    grid-row: 2;
@@ -360,6 +368,7 @@ footer ul {
     background-color:#f7e7de;
     color:#cd6a31;
     border:1px solid #D98C5F;
+    text-shadow:2px 2px #f0d0be;
   }
   
 

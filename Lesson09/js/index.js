@@ -81,11 +81,11 @@ fetch(requestURL)
     p1.setAttribute('class', 'p1');
     p2.setAttribute('class', 'p2');
     p3.setAttribute('class', 'p3');
-    pimage.setAttribute('src', "images/preston.jpg");
+    pimage.setAttribute('src', towns[4].photo);
     pimage.setAttribute('class', "pimage");
 
     t1.textContent = towns[4].name;
-    m1.textContent = towns[4].motto;
+    m1.textContent = '"' + towns[4].motto + '"';
     p1.textContent = "Year Founded: " + towns[4].yearFounded;
     p2.textContent = "Current Population: " + towns[4].currentPopulation;
     p3.textContent = "Average Rainfall: " + towns[4].averageRainfall;
@@ -115,12 +115,12 @@ fetch(requestURL)
     f1.setAttribute('class', 'f1');
     f2.setAttribute('class', 'f2');
     f3.setAttribute('class', 'f3');
-    fimage.setAttribute('src', "images/bearlake.jpg");
+    fimage.setAttribute('src', towns[1].photo);
     fimage.setAttribute('class', "fimage")
 
 
     t2.textContent = towns[1].name;
-    m2.textContent = towns[1].motto;
+    m2.textContent = '"' + towns[1].motto + '"';
     f1.textContent = "Year Founded: " + towns[1].yearFounded;
     f2.textContent = "Current Population: " + towns[1].currentPopulation;
     f3.textContent = "Average Rainfall: " + towns[1].averageRainfall;
@@ -150,11 +150,11 @@ fetch(requestURL)
     s1.setAttribute('class', 's1');
     s2.setAttribute('class', 's2');
     s3.setAttribute('class', 's3');
-    simage.setAttribute('src', "images/sodasprings.jpg");
+    simage.setAttribute('src', towns[5].photo);
     simage.setAttribute('class', "simage")
 
     t3.textContent = towns[5].name;
-    m3.textContent = towns[5].motto;
+    m3.textContent ='"' + towns[5].motto + '"';
     s1.textContent = "Year Founded: " + towns[5].yearFounded;
     s2.textContent = "Current Population: " + towns[5].currentPopulation;
     s3.textContent = "Average Rainfall: " + towns[5].averageRainfall;

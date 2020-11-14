@@ -1,0 +1,46 @@
+{
+  "person": {
+    "education": {
+      "certificate": "Master",
+      "university": "Harvard University"
+    },
+    "marriage": {
+      "married": false
+    },
+    "online_info": {
+      "email": "53qgl9@riseup.net",
+      "ip_address": "237.166.146.136",
+      "ipv6_address": "4abb:1e8a:67f7:4af4:316e:88cd:b5f9:5b06",
+      "password": "QxgSNIhBta",
+      "password_md5": "c8a5f80493b0016370f9b54486886061",
+      "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; Nokia 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36",
+      "username": "oozw7n"
+    },
+    "personal": {
+      "age": 23,
+      "blood": "B+",
+      "born": null,
+      "born_place": "San Diego",
+      "cellphone": "+497055701",
+      "city": "Yerevan",
+      "country": "France",
+      "eye_color": "Green",
+      "father_name": "Nina",
+      "gender": "Male",
+      "height": "2.02",
+      "last_name": "Stein",
+      "name": "Katee",
+      "national_code": "6703879028",
+      "religion": "Hindu",
+      "system_id": "b5812b06-c20c-4357-9349-a482a33b06c9",
+      "weight": 73
+    },
+    "work": {
+      "country_code": "DE",
+      "insurance": false,
+      "position": "Doctor",
+      "salary": "$9.500"
+    }
+  }
+}
+

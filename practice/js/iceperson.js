@@ -1,4 +1,4 @@
-const requestURL = 'https://pipl.ir/v1/getPerson.json';
+const requestURL = '/Users/hollypatterson77/Downloads/Local_Repository/pat19001.github.io/practice/json/person.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -15,26 +15,33 @@ fetch(requestURL)
     var list = [marriage, personal, online];
 
     for (i = 0; i < list.length; i++){
-      let cards = document.createElement('section');
-      let h2 = document.createElement('h2');
-      let p1 = document.createElement('p');
-      let p2 = document.createElement('p');
+      let card = document.createElement('section');
+      let name = document.createElement('h2');
+      let pass = document.createElement('p');
+      let eye = document.createElement('p');
+      let city = document.createElement('p');
+      let children = document.createElement('p');
+      let ip = document.createElement('p');
       let image = document.createElement('img');
 
 
-      // h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+      // h2.textContent = prophets[i].name + ' ' + person[i].;
       // p1.textContent = "Date of Birth: " + prophets[i].birthdate
       // p2.textContent = "Place of Birth: " + prophets[i].birthplace
 
 
-      // card.appendChild(h2);
-      // card.appendChild(p1);
-      // card.appendChild(p2);
-      // card.appendChild(image);
+      card.appendChild(name);
+      card.appendChild(pass);
+      card.appendChild(eye);
+      card.appendChild(city);
+      card.appendChild(children);
+      card.appendChild(city);
+      card.appendChild(city);
 
-      // document.querySelector('div.cards').appendChild(card);
+      document.querySelector('div.cards').appendChild(card);
       // image.setAttribute('src', prophets[i].imageurl);
       // image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + i)
 
     }
+  console.log(person);
   })
