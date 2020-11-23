@@ -15,8 +15,9 @@ fetch(requestURL)
     const online  = person['online_info'];
 
       let card = document.createElement('section');
-      let fname = document.createElement('h2');
-      let lname = document.createElement('h2');
+      let ident = document.createElement('h2')
+      let fname = document.createElement('p');
+      let lname = document.createElement('p');
       let pass = document.createElement('p');
       let eye = document.createElement('p');
       let city = document.createElement('p');
@@ -25,35 +26,41 @@ fetch(requestURL)
       let ip = document.createElement('p');
       let image = document.createElement('img');
 
-
-      fname.textContent = personal.name;
-      lname.textContent = personal.last_name;
-      eye.textContent = personal.eye_color;
-      city.textContent = personal.city;
-      country.textContent = personal.country;
-
-      children.textContent = marriage.children;
-
-      ip.textContent = online.ip_address;
+      ident.textContent = "Identification";
+      fname.textContent = "First Name: " + personal.name;
+      lname.textContent = "Last Name: " + personal.last_name;
+      eye.textContent = "Eye Color: " + personal.eye_color;
+      city.textContent = "City: " + personal.city;
+      country.textContent = "Country: " + personal.country;
+      pass.textContent = "Password: " + online.password;
+      children.textContent = "Children: " + marriage.children;
+      ip.textContent = "IP: " + online.ip_address;
 
       image.setAttribute('src', 'https://thispersondoesnotexist.com/image');
-      // p1.textContent = "Date of Birth: " + prophets[i].birthdate
-      // p2.textContent = "Place of Birth: " + prophets[i].birthplace
+      image.setAttribute('class', 'picture');
+      city.setAttribute('class', 'city')
+      country.setAttribute('class', 'country');
+      ip.setAttribute('class', 'ip');
+      pass.setAttribute('class', 'pass');
+      fname.setAttribute('class', 'fname');
+      lname.setAttribute('class', 'lname');
+      eye.setAttribute('class', 'eye');
+      children.setAttribute('class', 'children');
 
-
+      card.appendChild(ident);
+      card.appendChild(image);
+      card.appendChild(city);
+      card.appendChild(country);
+      card.appendChild(ip);
+      card.appendChild(pass);
       card.appendChild(fname);
       card.appendChild(lname);
-      card.appendChild(pass);
       card.appendChild(eye);
-      card.appendChild(city);
       card.appendChild(children);
-      card.appendChild(ip);
-      card.appendChild(country);
-      card.appendChild(image);
+      
+      
+      
 
 
       document.querySelector('div.cards').appendChild(card);
-      // image.setAttribute('src', prophets[i].imageurl);
-      // image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + i)
-
     })

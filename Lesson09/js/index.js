@@ -64,7 +64,7 @@ fetch(requestURL)
     console.table(jsonObject); // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
 
-
+    
     /*####################################### PRESTON ###################################*/
     let preston = document.createElement('section');
     let t1 = document.createElement('h2');

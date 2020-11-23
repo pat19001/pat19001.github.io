@@ -1,6 +1,52 @@
-section{
-
+.cards{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 350px;
+  background-color: lightyellow;
+  border: 1px solid burlywood;
+  border-radius: 15px;
 }
-img{
-  max-width:75%;
+h2{
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.city{
+  font-family: 'Romanesco', cursive;
+  font-size: 18px;
+}
+.country{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.pass{
+  padding:0 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.ip{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.picture{
+  max-width:30%;
+  float: left;
+  margin:0 10px;
+  border-top:15px solid royalblue;
+  border-bottom:15px solid royalblue;
+}
+.fname{
+  padding: 0 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.lname{
+  padding: 0 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.eye{
+  padding: 0 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.children{
+  padding: 0 8px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
