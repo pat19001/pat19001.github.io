@@ -1,0 +1,50 @@
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  font-family: sans-serif;
+  color:white;
+}
+
+.card1 {
+  background-color: #1f66e5;
+  border-radius: 25px;
+  padding-left: 10px;
+}
+
+.day{
+  font-size: 42px;
+}
+.tile1, .tile2, .tile3{
+  display: inline-block;
+  padding:5px;
+  border-radius: 5px;
+}
+.tile1{
+  background-color: #64edbc;
+}
+.tile2{
+  background-color:#ed6495;
+}
+.tile3{
+  background-color:#edbc64;
+}
+
+.card2 {
+  background-color: #6495ed;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.card3 {
+  background-color: #3676e8;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.card4 {
+  background-color: #4d85ea;
+  border-radius: 25px;
+  padding: 10px;
+}
