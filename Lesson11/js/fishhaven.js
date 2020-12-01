@@ -122,19 +122,22 @@ fetch(apiURL2)
       }
     }
 
-    c = 1;
+    c = 0;
     var days;
-    for (i = 1; i < 6; i++) {
-      var wday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      let newday = new Date().getDay();
-      days = document.querySelector("#weekday" + c);
-      console.log(newday);
-      let nextday = (newday + c);
-      days.textContent = wday[nextday];
-      if (nextday > 6) {
+    var newday;
+    var wday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    for (i = 0; i < wday.length - 1; i++) {
+
+      newday = new Date().getDay();
+      nextday = newday + i;
+
+      if (newday > 7) {
         nextday = nextday - 7;
-      } 
-      console.log(days);
+      }
+
+      days = document.querySelector("#weekday" + c);
+      days.textContent = wday[nextday];
+
       c += 1;
     }
   });
