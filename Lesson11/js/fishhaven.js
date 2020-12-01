@@ -49,7 +49,7 @@ window.addEventListener('load', (event) => {
 
 })
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c1820e7aeb32dab60966a969b49d248d&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585000&appid=c1820e7aeb32dab60966a969b49d248d&units=imperial";
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', apiURL, true);
 weatherRequest.send();
@@ -89,7 +89,7 @@ fetch(apiURL)
     }
     //console.log(wchill);
   });
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c1820e7aeb32dab60966a969b49d248d&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=c1820e7aeb32dab60966a969b49d248d&units=imperial";
 fetch(apiURL2)
   .then((response) => response.json())
   .then((jsonObject) => {
