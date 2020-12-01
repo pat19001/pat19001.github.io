@@ -167,10 +167,6 @@ nav {
   box-shadow: 3px 3px 10px #88888879;
 }
 
-.five-day-wrapper {
-  background-color: #303132;
-}
-
 .five-day-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -184,6 +180,12 @@ nav {
 
 .day {
   border: 1px solid#BB8152;
+}
+.credit{
+  background-color: white;
+}
+.credit a:link{
+  color: red;
 }
 
 .summ {
