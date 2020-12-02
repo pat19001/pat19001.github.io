@@ -1,355 +1,111 @@
 /* Small/Phone View ***************/
 html{
-margin: 0 auto;
-}
-#banner{
-  text-align: center;
-  background-color: #516073;
-  padding: 20px 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:#D98C5F;
-  border-radius: 10px;
-}
-#banner:hover{
-  background-color: #D98C5F;
-  color:#516073;
-}
-.hidden{
-  display:none;
-}
-header {
-  display: flex;
-  max-width: 760px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  color: #303132;
-}
-
-.cloudLogo {
-  height: 64px;
-  width: 64px;
-  padding-right: 5px;
-}
-
-.headings {
-  display: flex;
-  flex-direction: column;
-}
-
-.headings h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.6rem;
-  margin: 0 0 0 0px;
-}
-
-.motto {
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-style: italic;
-}
-
-nav {
-  margin: 0 auto;
-  background-color: #D98C5F;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.navigation {
-  margin: 0 auto;
-  list-style: none;
-  padding: 0 0;
-}
-.navigation .activeP a{
-  background-color: #BB8152;
-  color: white;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-
-.navigation li {
-  display: none;
-}
-
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-}
-
-.navigation a:hover {
-  color: white;
-  background-color: #BB8152;
-}
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-  display: block;
-}
-
-.location {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  text-align: center;
-}
-
-.hero-container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.overlay-s{
-  position: absolute;
-  /* Position the background text */
-  bottom:0;
-  right:0;
-  /* At the bottom. Use top:0 to append it to the top */
-  color: #f1f1f1;
-  /* Grey text */
-  padding: 20px;
-  /* Some padding */
-  max-width: 100%;
-  text-align: right;
-}
-.overlay-m{
-  display:none;
-}
-.overlay-l{
-  display:none;
-}
-
-.top-left {
-  position: absolute;
-  /* Position the background text */
-  top: 0;
-  /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(0, 0, 0, 0.5);
-  /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  /* Grey text */
-  margin: 25px 25px;
-  padding: 20px;
-  /* Some padding */
-  max-width: 100%;
-  text-align: left;
-}
-
-.top-left p {
-  margin: 0 0;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.hero {
-  display: block;
-  margin: 10px auto;
-  padding: 15px;
-  box-shadow: 3px 3px 10px #88888879;
-}
-
-.hero-image {
-  max-width: 100%;
-}
-
-.fiveday {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 12px;
-  font-style: italic;
-  display: block;
-  margin: 10px auto;
-  padding: 15px;
-  box-shadow: 3px 3px 10px #88888879;
-}
-
-.five-day-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: center;
-  padding: 20px;
-  box-shadow: 3px 3px 10px #88888879;
-  background-color: #D98C5F;
-  color: white;
-  column-gap: 1px;
-}
-
-.day {
-  border: 1px solid#BB8152;
-}
-.credit{
-  background-color: white;
-}
-.credit a:link{
-  color: red;
-}
-
-.summ {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 12px;
-  font-style: italic;
-  margin: 10px auto;
-  padding: 15px;
-  box-shadow: 3px 3px 10px #88888879;
-  width: 100%;
-}
-
-.article_photo {
-  width: 100%;
-}
-
-footer {
-  padding: 5px 15px;
-  background-color: #D98C5F;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-}
-
-footer h1 {
-  font-size: 12px;
-  font-family: 'Lato', sans-serif;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.social img {
-  height: 36px;
-  width: 36px;
-}
-
-.locationmap {
-  align-items: center;
-  visibility: hidden;
-  display: none;
-}
-
-.footerbar {
-  clear: both;
-  text-align: center;
-  grid-column: 1 / 3;
-}
-
-.footerbar p.legal {
-  margin-bottom: 9px;
-  font-size: .9em;
-}
-
-.footerbar p.highlight {
-  color: white;
-  font-size: .8em;
-  margin-top: 0;
-}
-
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-  .navigation {
-    display: flex;
-    font-size: 16px;
   }
-
-  .navigation li {
-    display: block;
-    /* change state in small view */
-    flex: 1 1 auto;
-  }
-
-  .navigation a {
+  #banner{
     text-align: center;
+    background-color: #516073;
+    padding: 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#D98C5F;
+    border-radius: 10px;
   }
- 
-  .navigation li:first-child {
-    display: none;
+  #banner:hover{
+    background-color: #D98C5F;
+    color:#516073;
   }
-
-  .cloudLogo img {
-    height: 80px;
-    width: 80px;
-  }
-
-  .article_photo {
-    max-width: 25%;
-    float: right;
-    width: 150px;
-    height: 100px;
-    border-radius: 5px;
-  }
-  .overlay-m{
-    display: block;
-    position: absolute;
-    /* Position the background text */
-    bottom:0;
-    right:0;
-    /* At the bottom. Use top:0 to append it to the top */
-    color: #f1f1f1;
-    /* Grey text */
-    padding: 20px;
-    /* Some padding */
-    max-width: 100%;
-    text-align: right;
-  }
-  .overlay-s{
+  .hidden{
     display:none;
-  }
-  .overlay-l{
-    display:hidden;
-  }
-
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-footer h1 {
-  grid-column: 2;
-}
-
-.contact,
-.social {
-  grid-column: 2;
-}
-
-.locationmap {
-  display: grid;
-  visibility: visible;
-  grid-column: 1 / 2;
-  grid-row: 2 / 4;
-  max-width: 75%;
-  justify-self: center;
-}
-
-
-/* Media Query for Large views */
-@media only screen and (min-width:1000px) {
-  body{
-    max-width: 1024px;
-    margin: 0 auto;
   }
   header {
-    margin: 0 6em;
-    justify-content: left;
-    font-size: 28px;
+    display: flex;
+    max-width: 760px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #303132;
   }
-
+  
+  .cloudLogo {
+    height: 64px;
+    width: 64px;
+    padding-right: 5px;
+  }
+  
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .headings h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 0 0 0px;
+  }
+  
+  .motto {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+  }
+  
   nav {
-    max-width: 100%;
-    padding: 0 50px;
+    margin: 0 auto;
+    background-color: #D98C5F;
+    font-family: 'Quicksand', sans-serif;
   }
-
-  #content {
-    margin: 0 6em;
+  
+  .navigation {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0 0;
   }
-  .overlay-l{
+  .navigation .activeP a{
+    background-color: #BB8152;
+    color: white;
+  }
+  
+  .navigation li:first-child {
     display: block;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .navigation a:hover {
+    color: white;
+    background-color: #BB8152;
+  }
+  
+  /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+    <ul class="navigation responsive">
+  */
+  .responsive li {
+    display: block;
+  }
+  
+  .location {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .overlay-s{
     position: absolute;
     /* Position the background text */
     bottom:0;
@@ -362,47 +118,300 @@ footer h1 {
     max-width: 100%;
     text-align: right;
   }
-  .overlay-s{
-    display:none;
-  }
   .overlay-m{
     display:none;
   }
-
-  .fiveday h3 {
-    font-size: 16px;
+  .overlay-l{
+    display:none;
   }
-
-  .day {
-    font-size: 16px;
+  
+  .top-left {
+    position: absolute;
+    /* Position the background text */
+    top: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    margin: 25px 25px;
+    padding: 20px;
+    /* Some padding */
+    max-width: 100%;
+    text-align: left;
   }
-
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 15px 8em;
-  }
-
-  footer h1 {
+  
+  .top-left p {
     margin: 0 0;
-    padding: 0 10px;
+    font-family: 'Quicksand', sans-serif;
   }
-
+  
+  .hero {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 3px 3px 10px #88888879;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+  }
+  .fiveday{
+    visibility: hidden;
+    display: none;
+  }
+  .five-day-container{
+    visibility: hidden;
+  }
+  
+  .day {
+    border: 1px solid#BB8152;
+  }
+  .credit{
+    background-color: white;
+  }
+  .credit a:link{
+    color: red;
+  }
+  
+  .summ {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px 10px;
+    box-shadow: 3px 3px 10px #88888879;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .article_photo {
+    width: 100%;
+  }
+  
+  footer {
+    padding: 5px 15px;
+    background-color: #D98C5F;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+  }
+  
+  footer h1 {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+  }
+  
   footer ul {
-    grid-column: 2;
+    list-style: none;
+    padding: 0;
   }
-
-  .contact {
-    padding: 0 10px;
-  }
-
-  .social {
-    visibility: visible;
-    padding: 0 10px;
-  }
-
+  
   .social img {
     height: 36px;
     width: 36px;
   }
-}
+  
+  .locationmap {
+    align-items: center;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .footerbar {
+    clear: both;
+    text-align: center;
+    grid-column: 1 / 3;
+  }
+  
+  .footerbar p.legal {
+    margin-bottom: 9px;
+    font-size: .9em;
+  }
+  
+  .footerbar p.highlight {
+    color: white;
+    font-size: .8em;
+    margin-top: 0;
+  }
+  
+  /* Media Query for medium+ views */
+  @media only screen and (min-width: 32.5em) {
+    .navigation {
+      display: flex;
+      font-size: 16px;
+    }
+  
+    .navigation li {
+      display: block;
+      /* change state in small view */
+      flex: 1 1 auto;
+    }
+  
+    .navigation a {
+      text-align: center;
+    }
+   
+    .navigation li:first-child {
+      display: none;
+    }
+  
+    .cloudLogo img {
+      height: 80px;
+      width: 80px;
+    }
+    .fiveday {
+      visibility: visible;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      display: block;
+      margin: 10px auto;
+      padding: 15px;
+      box-shadow: 3px 3px 10px #88888879;
+    }
+    
+    .five-day-container {
+      visibility: visible;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      text-align: center;
+      padding: 20px;
+      box-shadow: 3px 3px 10px #88888879;
+      background-color: #D98C5F;
+      color: white;
+      column-gap: 1px;
+    }
+  
+    .article_photo {
+      max-width: 20%;
+      float: right;
+      /* width: 210px;
+      height: 200px; */
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .overlay-m{
+      display: block;
+      position: absolute;
+      /* Position the background text */
+      bottom:0;
+      right:0;
+      /* At the bottom. Use top:0 to append it to the top */
+      color: #f1f1f1;
+      /* Grey text */
+      padding: 20px;
+      /* Some padding */
+      max-width: 100%;
+      text-align: right;
+    }
+    .overlay-s{
+      display:none;
+    }
+    .overlay-l{
+      display:hidden;
+    }
+  
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer h1 {
+    grid-column: 2;
+  }
+  
+  .contact,
+  .social {
+    grid-column: 2;
+  }
+  
+  .locationmap {
+    display: grid;
+    visibility: visible;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    max-width: 75%;
+    justify-self: center;
+  }
+  
+  
+  /* Media Query for Large views */
+  @media only screen and (min-width:1000px) {
+    body{
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    header {
+      margin: 0 6em;
+      justify-content: left;
+      font-size: 28px;
+    }
+  
+    nav {
+      max-width: 100%;
+      padding: 0 50px;
+    }
+  
+    #content {
+      margin: 0 6em;
+    }
+    .overlay-l{
+      display: block;
+      position: absolute;
+      /* Position the background text */
+      bottom:0;
+      right:0;
+      /* At the bottom. Use top:0 to append it to the top */
+      color: #f1f1f1;
+      /* Grey text */
+      padding: 20px;
+      /* Some padding */
+      max-width: 100%;
+      text-align: right;
+    }
+    .overlay-s{
+      display:none;
+    }
+    .overlay-m{
+      display:none;
+    }
+  
+    .fiveday h3 {
+      font-size: 16px;
+    }
+  
+    .day {
+      font-size: 16px;
+    }
+  
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 15px 8em;
+    }
+  
+    footer h1 {
+      margin: 0 0;
+      padding: 0 10px;
+    }
+  
+    footer ul {
+      grid-column: 2;
+    }
+  
+    .contact {
+      padding: 0 10px;
+    }
+  
+    .social {
+      visibility: visible;
+      padding: 0 10px;
+    }
+  
+    .social img {
+      height: 36px;
+      width: 36px;
+    }
+  }
