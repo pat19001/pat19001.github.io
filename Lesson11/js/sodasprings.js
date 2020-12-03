@@ -143,4 +143,34 @@ fetch(apiURL2)
   });
 
 
-/* f=35.74+0.6215t−35.75s0.16+0.4275ts0.16 */
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+    const towns = jsonObject['towns'];
+
+        /*####################################### SodaSprings ###################################*/
+        let eventhead = document.createElement('h2');
+        let sodaEvent1 = document.createElement('p');
+        let sodaEvent2 = document.createElement('p');
+        let sodaEvent3 = document.createElement('p');
+
+        sodaEvent1.setAttribute('class','event1');
+        sodaEvent2.setAttribute('class','event2');
+        sodaEvent3.setAttribute('class','event3');
+        
+        eventhead.textContent = "Soda Springs Events: ";
+        sodaEvent1.textContent = towns[6].events[0];
+        sodaEvent2.textContent = towns[6].events[1];
+        sodaEvent3.textContent = towns[6].events[2];
+        console.log(sodaEvent1);
+
+        document.querySelector("#events").appendChild(eventhead);
+        document.querySelector("#events").appendChild(sodaEvent1);
+        document.querySelector("#events").appendChild(sodaEvent2);
+        document.querySelector("#events").appendChild(sodaEvent3);
+      });

@@ -142,5 +142,37 @@ fetch(apiURL2)
     }
   });
 
+  const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+    const towns = jsonObject['towns'];
+
+        /*####################################### SodaSprings ###################################*/
+        let eventhead = document.createElement('h2');
+        let pEvent1 = document.createElement('p');
+        let pEvent2 = document.createElement('p');
+        let pEvent3 = document.createElement('p');
+
+        pEvent1.setAttribute('class','event1');
+        pEvent2.setAttribute('class','event2');
+        pEvent3.setAttribute('class','event3');
+        
+        eventhead.textContent = "Preston Events: ";
+        pEvent1.textContent = towns[5].events[0];
+        pEvent2.textContent = towns[5].events[1];
+        pEvent3.textContent = towns[5].events[2];
+        console.log(pEvent1);
+
+        document.querySelector("#events").appendChild(eventhead);
+        document.querySelector("#events").appendChild(pEvent1);
+        document.querySelector("#events").appendChild(pEvent2);
+        document.querySelector("#events").appendChild(pEvent3);
+      });
+
 
 /* f=35.74+0.6215t−35.75s0.16+0.4275ts0.16 */

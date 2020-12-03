@@ -157,6 +157,10 @@ p {
   grid-column: 2;
   grid-row: 2 / 5;
 }
+.clink{
+  text-decoration: none;
+  color:white;
+}
 
 /* ----------------- Fish Haven Card ---------------- */
 .fish {
@@ -196,6 +200,7 @@ p {
 }
 
 /* ------------------- Soda Springs Card ------------------ */
+
 .soda {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -285,6 +290,7 @@ p {
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  FOOTER $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 footer {
+  display: block;
   padding: 5px 15px;
   background-color: #D98C5F;
   color: white;
@@ -293,7 +299,6 @@ footer {
 }
 
 footer h1 {
-  font-size: 12px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -307,10 +312,8 @@ footer ul {
   width: 36px;
 }
 
-.locationmap {
+iframe {
   align-items: center;
-  visibility: hidden;
-  display: none;
 }
 
 .footerbar {
@@ -436,18 +439,20 @@ footer ul {
     grid-column: 2;
   }
 
-  .contact,
-  .social {
-    grid-column: 2;
-  }
-
-  .locationmap {
+  footer {
     display: grid;
-    visibility: visible;
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    max-width: 75%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    box-sizing: border-box;
+  }
+  
+  .social {
+    grid-column: 1/2;
+    grid-row: 1/2;
     justify-self: center;
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
