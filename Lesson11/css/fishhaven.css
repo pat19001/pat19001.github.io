@@ -154,7 +154,7 @@ html{
   }
   
   .hero-image {
-    max-width: 100%;
+    max-width: 80%;
   }
   .fiveday{
     visibility: hidden;
@@ -363,10 +363,6 @@ html{
   
   /* Media Query for Large views */
   @media only screen and (min-width:1000px) {
-    body{
-      max-width: 1024px;
-      margin: 0 auto;
-    }
     header {
       margin: 0 6em;
       justify-content: left;
