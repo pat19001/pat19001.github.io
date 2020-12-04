@@ -125,17 +125,18 @@ fetch(apiURL2)
     c = 0;
     var days;
     var newday;
-    var wday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    for (i = 0; i < wday.length - 1; i++) {
+    var wday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'];
+    for (i = 0; i < 6; i++) {
 
       newday = new Date().getDay();
       nextday = newday + i;
 
-      if (newday > 7) {
+      if (nextday > 6) {
         nextday = nextday - 7;
       }
 
       days = document.querySelector("#weekday" + c);
+      
       days.textContent = wday[nextday];
 
       c += 1;

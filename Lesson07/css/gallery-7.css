@@ -96,14 +96,14 @@ picture img {
 }
 
 .snow:hover,
-  .fog:hover,
-  .lightning:hover,
-  .rain:hover,
-  .sunny:hover,
-  .nado:hover,
-  .hurricane:hover,
-  .cloud:hover,
-  .storm:hover{
+.fog:hover,
+.lightning:hover,
+.rain:hover,
+.sunny:hover,
+.nado:hover,
+.hurricane:hover,
+.cloud:hover,
+.storm:hover {
   box-shadow: 0 0 50px #333;
 }
 
