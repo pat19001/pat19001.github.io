@@ -298,11 +298,7 @@ footer {
     width: 74px;
     height: 74px;
   }
-  body {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-
+ 
   header {
     margin: 0 6em;
     justify-content: left;
@@ -315,10 +311,10 @@ footer {
   }
 
 
-  /* form {
-    font-size: 18px;
+  form {
+    max-width: 760px;
     box-shadow: 10px 10px 10px lightslategray;
-  } */
+  }
 
   p {
     padding-bottom: 10px;

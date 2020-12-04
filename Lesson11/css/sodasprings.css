@@ -104,6 +104,7 @@ nav {
   position: relative;
   text-align: center;
   color: white;
+  padding: 50px;
 }
 .overlay-s{
   position: absolute;
@@ -149,8 +150,8 @@ nav {
 .hero {
   display: block;
   margin: 10px auto;
-  padding: 15px;
   box-shadow: 3px 3px 10px #88888879;
+  box-sizing: border-box;
 }
 
 .hero-image {
@@ -287,7 +288,7 @@ iframe {
     width: 80px;
   }
   .hero-image{
-    max-width:90%;
+    max-width:100%;
   }
   .fiveday {
     visibility: visible;
@@ -367,10 +368,6 @@ iframe {
 
 /* Media Query for Large views */
 @media only screen and (min-width:1000px) {
-  body{
-    max-width: 1024px;
-    margin: 0 auto;
-  }
   header {
     margin: 0 6em;
     justify-content: left;
@@ -404,6 +401,9 @@ iframe {
   }
   .overlay-m{
     display:none;
+  }
+  .hero{
+    max-width: 65%;
   }
 
   .fiveday h3 {

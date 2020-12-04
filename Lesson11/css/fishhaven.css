@@ -154,7 +154,7 @@ html{
   }
   
   .hero-image {
-    max-width: 80%;
+    max-width:100%;
   }
   .fiveday{
     visibility: hidden;
@@ -287,7 +287,7 @@ html{
       width: 80px;
     }
     .hero-image{
-      max-width:90%;
+      max-width:100%;
     }
     .fiveday {
       visibility: visible;
@@ -397,6 +397,9 @@ html{
     .overlay-m{
       display:none;
     }
+    .hero{
+      max-width: 65%;
+    }
   
     .fiveday h3 {
       font-size: 16px;
@@ -404,6 +407,9 @@ html{
   
     .day {
       font-size: 16px;
+    }
+    .article_photo{
+      max-width: 10%;
     }
   
     footer h1 {

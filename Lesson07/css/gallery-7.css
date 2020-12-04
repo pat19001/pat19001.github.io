@@ -7,10 +7,12 @@ header {
   color: #303132;
 }
 
-.logo {
+.cloudLogo {
   height: 64px;
   width: 64px;
   padding-right: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 .headings {
@@ -43,7 +45,8 @@ nav {
   list-style: none;
   padding: 0 0;
 }
-.navigation .activeP a{
+
+.navigation .activeP a {
   background-color: #BB8152;
   color: white;
 }
@@ -76,36 +79,51 @@ nav {
 .responsive li {
   display: block;
 }
-.title{
+
+.title {
   font-family: 'Quicksand', sans-serif;
 }
-#content{
-  display:grid;
+
+#content {
+  display: grid;
   justify-content: center;
   box-sizing: border-box;
   gap: 20px;
 }
-picture img{
+
+picture img {
   max-width: 100%;
 }
-picture:hover {
+
+.snow:hover,
+  .fog:hover,
+  .lightning:hover,
+  .rain:hover,
+  .sunny:hover,
+  .nado:hover,
+  .hurricane:hover,
+  .cloud:hover,
+  .storm:hover{
   box-shadow: 0 0 50px #333;
 }
+
 /* When you mouse over the container, fade in the overlay title */
 figcaption {
-box-sizing: border-box;
-background: rgb(0, 0, 0);
-background: rgba(0, 0, 0, 0.5); /* Black see-through */
-color: black;
-width: 100%;
-transition: .5s ease;
-opacity:1;
-color: white;
-font-size: 20px;
-padding: 20px;
-text-align: center;
-font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: black;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
+
 footer {
   display: block;
   padding: 5px 15px;
@@ -169,9 +187,9 @@ iframe {
   .navigation li:first-child {
     display: none;
   }
- 
-  #content{
-    display:grid;
+
+  #content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     justify-items: center;
@@ -179,9 +197,11 @@ iframe {
     gap: 20px;
     padding: 10px;
   }
+
   picture img {
     max-width: 100%;
   }
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -189,7 +209,7 @@ iframe {
     justify-items: center;
     box-sizing: border-box;
   }
-  
+
   .social {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -211,61 +231,74 @@ iframe {
     max-width: 100%;
     padding: 0 50px;
   }
-  #content{
-    display:grid;
+
+  #content {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(3, auto);
     justify-content: center;
     justify-items: center;
     box-sizing: border-box;
   }
-  picture img{
+
+  picture img {
     max-width: 100%;
     box-sizing: border-box;
   }
+
   figcaption {
     box-sizing: border-box;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     color: white;
     font-size: 20px;
     padding: 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    }
-  picture:hover figcaption {
-    opacity: 1;
-    }
+  }
 
-    footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    footer h1 {
-      margin: 0 0;
-      padding: 0 10px;
-    }
-  
-    footer ul {
-      grid-column: 2;
-    }
-  
-    .contact {
-      padding: 0 10px;
-    }
-  
-    .social {
-      visibility: visible;
-      padding: 0 10px;
-    }
-  
-    .social img {
-      height: 36px;
-      width: 36px;
-    }
+  .snow:hover figcaption,
+  .fog:hover figcaption,
+  .lightning:hover figcaption,
+  .rain:hover figcaption,
+  .sunny:hover figcaption,
+  .nado:hover figcaption,
+  .hurricane:hover figcaption,
+  .cloud:hover figcaption,
+  .storm:hover figcaption {
+    opacity: 1;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer h1 {
+    margin: 0 0;
+    padding: 0 10px;
+  }
+
+  footer ul {
+    grid-column: 2;
+  }
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  .social {
+    visibility: visible;
+    padding: 0 10px;
+  }
+
+  .social img {
+    height: 36px;
+    width: 36px;
+  }
 }
