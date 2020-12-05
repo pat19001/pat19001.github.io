@@ -163,7 +163,7 @@ fetch(requestURL)
         pEvent2.setAttribute('class','event2');
         pEvent3.setAttribute('class','event3');
         
-        eventhead.textContent = "Preston Events: ";
+        eventhead.textContent = "Preston Events ";
         pEvent1.textContent = towns[5].events[0];
         pEvent2.textContent = towns[5].events[1];
         pEvent3.textContent = towns[5].events[2];

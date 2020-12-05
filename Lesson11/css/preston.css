@@ -182,7 +182,7 @@ html{
   .event1{
     background-color: rgb(217,95,172,0.5);
     margin: 0;
-    border-radius: 2px;
+    border-radius: 5px;
     padding:10px 10px;
   }
   .event2{
@@ -242,6 +242,7 @@ html{
   
   iframe {
     align-items: center;
+    max-width: 100%;
   }
   
   .footerbar {
@@ -407,6 +408,36 @@ html{
   
     .day {
       font-size: 16px;
+    }
+    #events{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,1fr);
+      padding: 20px;
+    }
+    #events h2{
+      text-align: center;
+      grid-column: 1/4;
+    }
+    .event1{
+      grid-row: 2/3;
+      margin:5px;
+      padding: 18px;
+      align-self: center;
+    }
+    .event2{
+      grid-row: 2/3;
+      grid-column: 2/3;
+      margin:5px;
+      padding: 18px;
+      align-self: center;
+    }
+    .event3{
+      grid-row: 2/3;
+      grid-column: 3/4;
+      margin:5px;
+      padding: 18px;
+      align-self: center;
     }
   
     footer h1 {
