@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Page Title</title>
+  <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
   <script src='js/index.js'></script>
@@ -13,11 +13,10 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <div id="navbar">
+  <div class="nav">
     <ul class="navigation">
       <li><a class="ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-      <li><a href="https://pat19001.github.io/FinalProject/index.html">Home</a></li>
+      <li><a class="activeP" href="https://pat19001.github.io/FinalProject/index.html">Home</a></li>
       <li><a href="https://pat19001.github.io/FinalProject/temples.html">Temples</a></li>
       <li><a href="https://pat19001.github.io/FinalProject/reservations.html">Reservations</a></li>
       <li>
@@ -31,54 +30,101 @@
       <li><a href="https://pat19001.github.io/FinalProject/contact.html">Contact</a></li>
     </ul>
   </div>
-  </nav>
   <div class="hero-image">
     <div class="hero-text">
       <header>
+        <img class="logo" src="images/transparentwhitelogo.png" alt="logo">
         <p>Temple Inn & Suites</p>
       </header>
-      <button class="hero-button">BOOK NOW</button>
+      <button class="button button1">BOOK NOW</button>
     </div>
   </div>
   <main>
     <section class="content">
-      <div class="content-text">
-      <h3 class="content-head">A place you can make your own</h3>
-      <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet numquam laboriosam et! Quae reiciendis
-        temporibus, optio dolorem fuga eligendi porro provident numquam iusto ullam! Sint reprehenderit quo ad non.</p>
-      </div>
-        <picture class="content1"><img class="content1" src="images/messybed700.jpg" alt="#"></picture>
-        <picture class="content2"><img class="content2" src="images/desk700.jpg" alt="#"></picture>
-      <button class="content-button">ROOMS</button>
+      <section>
+        <div class="content-text">
+          <h3 class="content-head">Stay closer to your heavenly home.</h3>
+          <p>Here at Temple Inn & Suites, we specialize in providing hotel accommodations thoughtfully placed near the
+            breathtaking temples of the Church of Jesus Christ of Latter Day Saints. We believe that providing a place
+            for those seeking to be near the temple is a wonderful way we can serve those around us and contribute to
+            the Lord's work.
+          </p>
+        </div>
+      </section>
+      <section class="content-image1">
+        <div id="content-overlay1">
+          <picture class="content1"><img class="content1" src="images/templeattendance.jpeg" alt="#" loading="lazy">
+          </picture>
+        </div>
+      </section>
+      <section class="content-image2">
+        <div id="content-overlay2">
+          <picture class="content2"><img class="content2" src="images/bedfront.jpg" alt="#" loading="lazy"></picture>
+        </div>
+      </section>
+      <section>
+        <h3 class="content-head">Specialized Services</h3>
+        <p>
+        <ul>
+          <li>Free access to changing rooms and bathroom facilities for temple patrons</li>
+          <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+          <li>Long-term stay accommodations</li>
+          <li>Temple history themed reception and sitting area</li>
+          <li>A family search center that supports family search and ordinance work</li>
+        </ul>
+        </p>
+
+        <button class="button button2">ROOMS</button>
+      </section>
     </section>
     <section class="locations">
       <div class="container">
-        <img src="images/Provo-City-Center.jpg" alt="Provo City Center Temple" class="location">
+        <img src="images/Provo-City-Center.jpg" alt="Provo City Center Temple" class="location" loading="lazy">
         <div class="overlay">
           <div class="text">Provo, Utah</div>
         </div>
       </div>
       <div class="container">
-        <img src="images/tucson.jpg" alt="Tuscon Arizona Temple" class="location">
+        <img src="images/tucson.jpg" alt="Tuscon Arizona Temple" class="location" loading="lazy">
         <div class="overlay">
           <div class="text">Tuscon, Arizona</div>
         </div>
       </div>
       <div class="container">
-        <img src="images/houston.jpg" alt="Houston Texas Temple" class="location">
+        <img src="images/houston.jpg" alt="Houston Texas Temple" class="location" loading="lazy">
         <div class="overlay">
           <div class="text">Houston, Texas</div>
         </div>
       </div>
       <div class="container">
-        <img src="images/BatonRouge.jpeg" alt="Baton Rouge Lousiana" class="location">
+        <img src="images/BatonRouge.jpeg" alt="Baton Rouge Lousiana" class="location" loading="lazy">
         <div class="overlay">
           <div class="text">Baton Rouge, Louisiana</div>
         </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <section class='social'>
+      <h4>Contact Us</h4>
+      <h5>Temple Inn & Suites</h5>
+      <ul>
+        <li class='email' href='#'><img src="images/email.png" alt="at-sign icon"> templeinn@gmail.com</li>
+        <li class='phone' href='#'><img src="images/phone.png" alt="at-sign icon"> 888.888.8888</li>
+      </ul>
+      <a target="_blank" href='https://instagram.com'> <img src='images/instagram.png'></a>
+      <a target="_blank" href='https://facebook.com'> <img src='images/facebook.png'></a>
+      <a target="_blank" href='https://twitter.com'> <img src='images/twitter.png'></a>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013257!2d-77.09772048475591!3d38.983251779557484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607726567339!5m2!1sen!2sus"
+      width="400" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <section class="footerbar">
+      <p class="legal">&copy; <span id="copyrightyear"></span> | Holly Patterson | Idaho | <a
+          href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <p class="highlight">Last Updated <span id="lastupdated"></span></p>
+    </section>
+  </footer>
 </body>
 
 </html>

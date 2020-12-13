@@ -5,20 +5,40 @@ function toggleMenu() {
     mainnav.classList.toggle('responsive');
   // }, false);
 }
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.addEventListener('load', (event) => {
+  const cd = document.querySelector('#lastupdated');
+  let day = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ]
+  let month = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'Novemeber',
+    'December'
+  ]
+  cd.textContent = day[new Date().getDay()] + ', ' + new Date().getDate() + ' ' + month[new Date().getMonth()] + ' ' + new Date().getFullYear();
 
-// Get the navbar
- navbar = document.getElementById("navbar");
+  const cry = document.querySelector('#copyrightyear');
+  cry.textContent = new Date().getFullYear();
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+  const b = document.querySelector("#banner");
+  today = new Date().getDay();
+  if (today == 5) {
+    b.style.display = "block";
   }
-}
+
+})
