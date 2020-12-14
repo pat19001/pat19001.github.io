@@ -6,6 +6,7 @@ function toggleMenu() {
   // }, false);
 }
 window.addEventListener('load', (event) => {
+
   const cd = document.querySelector('#lastupdated');
   let day = [
     'Sunday',
@@ -42,3 +43,35 @@ window.addEventListener('load', (event) => {
   }
 
 })
+// const requestURL = '/practice/json/person.json';
+
+const requestURL = 'https://pat19001.github.io/FinalProject/json/temples.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+    
+    const info = jsonObject['temple']
+
+      let provo = document.createElement('div');
+      let tucson = document.createElement('div');
+      let houston = document.createElement('div');
+      let baton = document.createElement('div');
+
+      provo.setAttribute('class', 'location');
+      tucson.setAttribute('class', 'location');
+      houston.setAttribute('class', 'location');
+      baton.setAttribute('class', 'location');
+
+      provo.textContent = "Temple: " + provo.name;
+
+      document.querySelector('div.sections').appendChild(provo);
+      document.querySelector('div.sections').appendChild(tucson);
+      document.querySelector('div.sections').appendChild(houston);
+      document.querySelector('div.sections').appendChild(baton);
+
+
+    })
