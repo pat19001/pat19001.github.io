@@ -8,6 +8,7 @@
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
   <link href='css/contact.css' rel='stylesheet'>
+  <link href="css/normalize.css" rel="stylesheet">
   <script src='js/index.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
@@ -41,28 +42,21 @@
     </div>
   </div>
   <main>
-    <div class="contact-container">
+    <div class="formContainer">
       <form action="#">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-    
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
+      <h2 class="form-heading">Contact Form</h2>
+      <label for="fname">First Name:</label>
+      <input placeholder="First Name" type="text" name="firstName" required="">
+      <label for="lname">Last Name:</label>
+      <input placeholder="Last Name" type="text" name="lastName" required="">
+      <label for="email">Email:</label>
+      <input placeholder="Email" type="email" name="customerEmail" required="">
+      <label for="phone">Phone:</label>
+      <input placeholder="Phone" type="tel" name="customerPhone" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <label for="comments">Additional Comment or Requests:</label>
+      <textarea type="text" name="comments"></textarea>
+      <input type="submit" value="Submit">
+    </form>
     </div>
   </main>
   <footer>

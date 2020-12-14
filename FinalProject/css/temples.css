@@ -11,7 +11,7 @@ button{
 .dropbtn {
   color: #586F6B;
   text-shadow: .5px .5px #ddd;
-  padding: 100px;
+  padding: 70px;
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -22,21 +22,29 @@ button{
   background-image: url(Provo-City-Center.jpg);
   background-position: center;
   background-size: cover; /* Resize the background image to cover the entire container */
+  height: 250px;
+  overflow: hidden;
 }
 #timage{
   background-image: url(tucson.jpg);
   background-position: center;
   background-size: cover; /* Resize the background image to cover the entire container */
+  height: 250px;
+  overflow: hidden;
 }
 #himage{
   background-image: url(houston.jpg);
   background-position: center;
   background-size: cover; /* Resize the background image to cover the entire container */
+  height: 250px;
+  overflow: hidden;
 }
 #bimage{
   background-image: url(BatonRouge.jpeg);
   background-position: center;
   background-size: cover; /* Resize the background image to cover the entire container */
+  height: 250px;
+  overflow: hidden;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
@@ -75,8 +83,8 @@ button{
 .show {display:block;}
 
 @media only screen and (min-width: 992px){
-#sections{
+/* #sections{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-  }
+  } */
 }
