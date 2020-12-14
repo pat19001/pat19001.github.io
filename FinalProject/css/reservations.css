@@ -136,23 +136,42 @@ html {
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(71, 70, 70, 0.19);
 }
+/*############################## FORM ####################################*/
 
+main{
+  background-color: #ddd;
+  padding:30px 0;
+}
 .formContainer{
-  max-width:50%;
+  max-width:60%;
   margin: 0 auto;
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  padding: 60px;
+  background-color: white;
 }
-input, textarea {
+.form-heading{
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  color:#586F6B;
+  margin-top:0;
+  margin-bottom: 40px;
+}
+label{
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  color:#586F6B;
+}
+input, textarea, select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  font-family: 'Raleway', 'sans serif';
+  color:#586F6B;
 }
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #7F9183;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -161,7 +180,7 @@ input[type=submit] {
   float: right;
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #586F6B;
 }
 /*############################## FOOTER ################################*/
 footer {
@@ -238,9 +257,27 @@ iframe {
   .logo {
     max-width: 40%;
   }
-  /*############################## FOOTER ################################*/
-  
+  /*############################## FOOTER ################################*/  
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  .social{
+    text-align: center;
+  }
+  #map{
+    align-content: flex-end;
+  }
 }
 @media only screen and (min-width: 992px){
-
+  /*############################## FORM ################################*/
+  main{
+    padding:60px;
+  }
+  .formContainer{
+    max-width:50%;
+  }
 }

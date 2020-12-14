@@ -43,22 +43,44 @@
   <main>
     <div class="formContainer">
       <form action="#">
+      <h2 class="form-heading">Reservation Form</h2>
+      <label for="fname">First Name:</label>
       <input placeholder="First Name" type="text" name="firstName" required="">
+      <label for="lname">Last Name:</label>
       <input placeholder="Last Name" type="text" name="lastName" required="">
-      <input placeholder="Email" type="email" name="customerEmail">
-      <input placeholder="Phone" type="tel" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-      <input placeholder="Location" type="text" name="desiredLocation">
-      <input placeholder="#" type="date" name="arrivalDate">
-      <input placeholder="#" type="date" name="departureDate">
-      <input placeholder="#" type="number" name="customerGuests">
-      <input placeholder="#" type="number" name="customerRooms">
-      <input placeholder="#" type="text" name="comments">
-      <textarea placeholder="#" type="text" name="comments"></textarea>
+      <label for="email">Email:</label>
+      <input placeholder="Email" type="email" name="customerEmail" required="">
+      <label for="phone">Phone:</label>
+      <input placeholder="Phone" type="tel" name="customerPhone" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <label for="location">Inn Location:</label>
+      <select id="location" type="text" name="desiredLocation" required="">
+        <option value="Provo">Provo</option>
+        <option value="Tucson">Tuscon</option>
+        <option value="Houston">Houston</option>
+        <option value="Baton Rouge">Baton Rouge</option>
+      </select>
+      <label for="arrival">Arrival Date:</label>
+      <input type="date" name="arrivalDate" required="">
+      <label for="departure">Departure Date:</label>
+      <input type="date" name="departureDate" required="">
+      <label for="guests">Number of Guests:</label>
+      <input placeholder="–" type="number" name="customerGuests">
+      <label for="rooms">Number of Rooms:</label>
+      <input placeholder="–" type="number" name="customerRooms" required="">
+      <label for="room-type">Room Type:</label>
+      <select id="room-type" name="room-type" required="">
+        <option value="King">King</option>
+        <option value="Queen">Queen</option>
+        <option value="Double">Double</option>
+      </select>
+      <label for="comments">Additional Comment or Requests:</label>
+      <textarea type="text" name="comments"></textarea>
       <input type="submit" value="Submit">
     </form>
     </div>
   </main>
   <footer>
+    <div class="footer-container">
     <section class='social'>
       <h4>Contact Us</h4><br>
       <h5>Temple Inn & Suites</h5>
@@ -72,11 +94,12 @@
       <a target="_blank" href='https://twitter.com'> <img src='images/twitter.png'></a>
     </section>
     
-    <div>
+    <div id="map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013257!2d-77.09772048475591!3d38.983251779557484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607726567339!5m2!1sen!2sus"
       width="400" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
+  </div>
     <section class="footerbar">
       <p class="legal">&copy; <span id="copyrightyear"></span> | Holly Patterson | Idaho | <a
           href="https://www.byui.edu/online">BYUI Online Learning</a></p>
