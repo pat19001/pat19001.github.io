@@ -7,6 +7,7 @@
   <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
+  <link href='css/contact.css' rel='stylesheet'>
   <script src='js/index.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
@@ -40,13 +41,36 @@
     </div>
   </div>
   <main>
-
+    <div class="contact-container">
+      <form action="#">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
   </main>
   <footer>
     <section class='social'>
-      <h4>Contact Us</h4>
+      <h4>Contact Us</h4><br>
       <h5>Temple Inn & Suites</h5>
       <ul>
+        <li class="address" href='#'>4800 Montgomery Ln #300<br> Bethesda, MD 20814</li>
         <li class='email' href='#'><img src="images/email.png" alt="at-sign icon"> templeinn@gmail.com</li>
         <li class='phone' href='#'><img src="images/phone.png" alt="at-sign icon"> 888.888.8888</li>
       </ul>

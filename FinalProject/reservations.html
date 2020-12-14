@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
-  <link href='css/index.css' rel='stylesheet'>
+  <!-- <link href='css/index.css' rel='stylesheet'> -->
+  <link href='css/reservations.css' rel='stylesheet'>
   <script src='js/index.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
@@ -40,23 +41,42 @@
     </div>
   </div>
   <main>
-
+    <div class="formContainer">
+      <form action="#">
+      <input placeholder="First Name" type="text" name="firstName" required="">
+      <input placeholder="Last Name" type="text" name="lastName" required="">
+      <input placeholder="Email" type="email" name="customerEmail">
+      <input placeholder="Phone" type="tel" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <input placeholder="Location" type="text" name="desiredLocation">
+      <input placeholder="#" type="date" name="arrivalDate">
+      <input placeholder="#" type="date" name="departureDate">
+      <input placeholder="#" type="number" name="customerGuests">
+      <input placeholder="#" type="number" name="customerRooms">
+      <input placeholder="#" type="text" name="comments">
+      <textarea placeholder="#" type="text" name="comments"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
   </main>
   <footer>
     <section class='social'>
-      <h4>Contact Us</h4>
+      <h4>Contact Us</h4><br>
       <h5>Temple Inn & Suites</h5>
       <ul>
-        <li class='email' href='#'><img src="images/email.png" alt="at-sign icon"> templeinn@gmail.com</li>
-        <li class='phone' href='#'><img src="images/phone.png" alt="at-sign icon"> 888.888.8888</li>
-      </ul>
+        <li class="address" href='#'>4800 Montgomery Ln #300<br> Bethesda, MD 20814</li>
+        <li class='email' href='#'><img src="images/email.png" alt="email icon"> templeinn@gmail.com</li>
+        <li class='phone' href='#'><img src="images/phone.png" alt="phone icon"> 888.888.8888</li>
+      </ul><br>
       <a target="_blank" href='https://instagram.com'> <img src='images/instagram.png'></a>
       <a target="_blank" href='https://facebook.com'> <img src='images/facebook.png'></a>
       <a target="_blank" href='https://twitter.com'> <img src='images/twitter.png'></a>
     </section>
+    
+    <div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013257!2d-77.09772048475591!3d38.983251779557484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607726567339!5m2!1sen!2sus"
       width="400" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
     <section class="footerbar">
       <p class="legal">&copy; <span id="copyrightyear"></span> | Holly Patterson | Idaho | <a
           href="https://www.byui.edu/online">BYUI Online Learning</a></p>
@@ -64,4 +84,5 @@
     </section>
   </footer>
 </body>
+
 </html>

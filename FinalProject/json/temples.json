@@ -1,0 +1,67 @@
+[{
+  "temple": {
+    "provo": {
+      "name": "Provo City Center Temple",
+      "address": "50 South University Avenue",
+      "city": "Provo",
+      "state": "Utah",
+      "zipcode": "84601",
+      "country": "United States",
+      "telephone": "801-343-2700",
+      "services": {
+        "housing": "No patron housing available",
+        "clothing": "Clothing rental available",
+        "cafeteria": "No cafeteria food served",
+        "distribution": "Distribution store nearby"
+      }
+
+    },
+    "tuscon": {
+      "name": "Tuscon Arizona Temple",
+      "address": "7281 N Skyline Dr",
+      "city": "Tucson",
+      "state": "Arizona",
+      "zipcode": "85718",
+      "country": "United States",
+      "telephone": "520-395-3900",
+      "services": {
+        "housing": "No patron housing available",
+        "clothing": "No clothing rental available",
+        "cafeteria": "No cafeteria food served",
+        "distribution": "Distribution store nearby"
+      }
+    },
+
+    "houston": {
+      "name": "Houston Texas Temple",
+      "address": "15725 Champion Forest Drive",
+      "city": "Spring",
+      "state": "Texas",
+      "zipcode": "77379-7036",
+      "country": "United States",
+      "telephone": "281-376-6804",
+      "services": {
+        "housing": "No patron housing available",
+        "clothing": "Clothing rental available",
+        "cafeteria": "No cafeteria food served",
+        "distribution": "Distribution store nearby"
+      }
+    },
+    "batonrouge": {
+      "name": "Baton Rouge Louisiana Temple",
+      "address": "10339 Highland Road",
+      "city": "Baton Rouge",
+      "state": "Louisiana",
+      "zipcode": "70810",
+      "country": "United States",
+      "telephone": "225-769-1197",
+      "services": {
+        "housing": "No patron housing available",
+        "clothing": "No clothing rental available",
+        "cafeteria": "No cafeteria food served",
+        "distribution": "No distribution store nearby"
+      }
+    }
+  }
+
+}]
