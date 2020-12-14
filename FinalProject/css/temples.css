@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+#sections{
+  display:grid;
+}
+button{
+  max-width: 100%;
+ 
+}
+.dropbtn {
+  color: #586F6B;
+  text-shadow: .5px .5px #ddd;
+  padding: 100px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  margin:0;
+  text-align: center;
+}
+#pimage{
+  background-image: url(Provo-City-Center.jpg);
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#timage{
+  background-image: url(tucson.jpg);
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#himage{
+  background-image: url(houston.jpg);
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#bimage{
+  background-image: url(BatonRouge.jpeg);
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.temple {
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.temple-dropdown {
+  display: none;
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  color: #7F9183;
+  background-color: #ddd;
+  border:2px solid #ddd;
+  max-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:10px;
+}
+/* Links inside the dropdown */
+.temple-dropdown p {
+  color: #7F9183;
+  padding: 2px 16px;
+  text-decoration: none;
+  display: block;
+  margin:0;
+  font-family: 'Raleway', 'sans serif';
+}
+/* Change color of dropdown links on hover */
+.temple-dropdown p:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media only screen and (min-width: 992px){
+#sections{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
