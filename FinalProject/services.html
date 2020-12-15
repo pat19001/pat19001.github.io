@@ -7,8 +7,10 @@
   <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
+  <link href='css/services.css' rel='stylesheet'>
   <link href="css/normalize.css" rel="stylesheet">
   <script src='js/index.js'></script>
+  <script src='js/services.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
 </head>
@@ -21,7 +23,8 @@
       <li><a href="https://pat19001.github.io/FinalProject/temples.html">Temples</a></li>
       <li><a href="https://pat19001.github.io/FinalProject/reservations.html">Reservations</a></li>
       <li>
-        <div class="dropdown"><a class="activeP" href="https://pat19001.github.io/FinalProject/services.html">Services</a>
+        <div class="dropdown"><a class="activeP"
+            href="https://pat19001.github.io/FinalProject/services.html">Services</a>
           <div class="dropdown-content">
             <a href="#">Receptions</a>
             <a href="#">Full-Time Missionaries</a>
@@ -37,11 +40,134 @@
         <img class="logo" src="images/transparentwhitelogo.png" alt="logo">
         <p>Temple Inn & Suites</p>
       </header>
-      <button class="button button1">BOOK NOW</button>
+      <button class="button button1" href="https://pat19001.github.io/FinalProject/reservations.html">BOOK NOW</button>
     </div>
   </div>
   <main>
+    <h2>Temple Inn & Suites Services</h2>
+    <div class="hotel-services">
+      <div class="sp-services">
+        <h3 class="content-head">Specialized Services</h3>
+        <ul>
+          <li>Free access to changing rooms and bathroom facilities for temple patrons</li>
+          <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+          <li>Long-term stay accommodations</li>
+          <li>Temple history themed reception and sitting area</li>
+          <li>A family search center that supports family search and ordinance work</li>
+        </ul>
+      </div>
+      <div class="amenities">
+        <h3 class="content-head">Free Amenities</h3>
+        <ul>
+          <li>Breakfast</li>
+          <li>Exercise/workout room</li>
+          <li>Indoor pool</li>
+          <li>WiFi high-speed internet access and smart TVs</li>
+          <li>Parking</li>
+          <li>Temple shuttle</li>
+          <li>Family history consultation and family ordinance card service</li>
+        </ul>
+      </div>
+      <!-- Container for the image gallery -->
+      <div class="gallery-container">
 
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/breakfast.jpg" style="max-width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/exercise.jpg" style="max-width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/pool.jpg" style="max-width:80%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/tv.jpg" style="max-width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/parking.jpg" style="max-width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/shuttle.jpg" style="max-width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/breakfast.jpg" style="width:100%" onclick="currentSlide(1)"
+              alt="Breakfast Buffet">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/exercise.jpg" style="width:100%" onclick="currentSlide(2)"
+              alt="Exercise Room">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/pool.jpg" style="width:100%" onclick="currentSlide(3)"
+              alt="Indoor Pool">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/tv.jpg" style="width:100%" onclick="currentSlide(4)" alt="Smart TV">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/parking.jpg" style="width:100%" onclick="currentSlide(5)"
+              alt="Available Parking">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/shuttle.jpg" style="width:100%" onclick="currentSlide(6)"
+              alt="Temple Shuttle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Additional Services</h2>
+    <section class="child-pages">
+      <a href="https://pat19001.github.io/FinalProject/receptions.html">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="reception-image" src="images/engaged.jpg">
+          </div>
+            <div class="flip-card-back">
+              <h2 class="flip-card-h">Recently Engaged?</h2>
+              <p>Let us host your reception!</p>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://pat19001.github.io/FinalProject/missionaries.html">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="missionary-image" src="images/missionary.jpg" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h2 class="flip-card-h">Full-Time Missionary?</h2>
+            <p>We have options for long-term accomodations!</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    </section>
   </main>
   <footer>
     <section class='social'>
@@ -66,4 +192,5 @@
     </section>
   </footer>
 </body>
+
 </html>

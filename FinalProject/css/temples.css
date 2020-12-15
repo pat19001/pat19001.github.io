@@ -3,6 +3,8 @@
 }
 #sections{
   display:grid;
+  padding:50px;
+  background-color: #DDD5D0;
 }
 button{
   max-width: 100%;

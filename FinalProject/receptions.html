@@ -7,6 +7,7 @@
   <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
+  <link href='css/receptions.css' rel='stylesheet'>
   <link href="css/normalize.css" rel="stylesheet">
   <script src='js/index.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +20,10 @@
       <li><a class="ham" href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
       <li><a href="https://pat19001.github.io/FinalProject/index.html">Home</a></li>
       <li><a href="https://pat19001.github.io/FinalProject/temples.html">Temples</a></li>
-      <li><a class="activeP" href="https://pat19001.github.io/FinalProject/reservations.html">Reservations</a></li>
+      <li><a href="https://pat19001.github.io/FinalProject/reservations.html">Reservations</a></li>
       <li>
-        <div class="dropdown"><a href="https://pat19001.github.io/FinalProject/services.html">Services</a>
+        <div class="dropdown"><a class="activeP"
+            href="https://pat19001.github.io/FinalProject/services.html">Services</a>
           <div class="dropdown-content">
             <a class="activeP" href="#">Receptions</a>
             <a href="#">Full-Time Missionaries</a>
@@ -37,11 +39,65 @@
         <img class="logo" src="images/transparentwhitelogo.png" alt="logo">
         <p>Temple Inn & Suites</p>
       </header>
-      <button class="button button1">BOOK NOW</button>
+      <button class="button button1" href="https://pat19001.github.io/FinalProject/reservations.html">BOOK NOW</button>
     </div>
   </div>
   <main>
+    <section class="venue">
+      <h2 class="content-head">Rent Our Venue</h2>
+      <p>*Seating and/or Decorations Included Upon Request*</p>
+      <p>Our services are tailored to your vision. We can provide high quality seating arrangements and decorations<br>
+        or
+        you may coordinate with us to have your own decorations set up.</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/venue.jpg">
+          <img src="images/weddingtable.jpg">
+          <img src="images/lightbulbs.jpg">
+        </div>
+        <div class="column">
+          <img src="images/woodentables.jpg">
+          <img src="images/flowerarch.jpg">
+          <img src="images/tabledecor.jpg">
+        </div>
+        <div class="column">
+          <img src="images/weddingtable.jpg">
+          <img src="images/centerpiece.jpg">
+        </div>
+      </div>
+    </section>
 
+    <section class="catering">
+      <h2 class="content-head">Allow Us to Cater</h2>
+      <p>With access to some of the greatest chefs and ingredients, we can make your dream menu come to life.</p>
+      <p>Visit our <a href="https://pat19001.github.io/FinalProject/contact.html">Contact Page</a> to get in touch and plan your dream menu.</p>
+      <p>Certain menu items vary depending on location.</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/veggies.jpg">
+          <img src="images/cateringfood.jpg">
+          <img src="images/crepes.jpg">
+          <img src="images/porkbbq.jpg">
+          <img src="images/salmon.jpg">
+        </div>
+        <div class="column">
+          <img src="images/sushi.jpg">
+          <img src="images/cateringfood2.jpg">
+          <img src="images/pasta.jpg">
+          <img src="images/cheesecake.jpg">
+          <img src="images/cannoli.jpg">
+          <img src="images/croissant.jpg">
+        </div>
+        <div class="column">
+          <img src="images/bowtie.jpg">
+          <img src="images/burger.jpg">
+          <img src="images/butterchicken.jpg">
+          <img src="images/eggplant.jpg">
+          <img src="images/potstickers.jpg">
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer>
     <section class='social'>
@@ -66,4 +122,5 @@
     </section>
   </footer>
 </body>
+
 </html>
