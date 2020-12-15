@@ -7,6 +7,7 @@
   <title>Temple Inn & Suites</title>
   <meta name="description" content="homepage for Temple Inn & Suites">
   <link href='css/index.css' rel='stylesheet'>
+  <link href='css/missionaries.css' rel='stylesheet'>
   <link href="css/normalize.css" rel="stylesheet">
   <script src='js/index.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,7 +42,57 @@
     </div>
   </div>
   <main>
-
+    <div class="accommodations">
+    <section class="onebed">
+      <h1 class="content-head">Long-Term Accommodations</h1>
+      <h2 class="content-head">1bedroom 1bath</h2>
+      <p>Please Contact for Pricing and Availabilty</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/livingspace.jpg">
+          <img src="images/bedbright.jpg">
+          <img src="images/bathroom1.jpg">
+        </div>
+      </div>
+      </section>
+    <section class="twobed">
+      <h2 class="content-head">2bedroom 1bath</h2>
+      <p>Please Contact for Pricing and Availabilty</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/bedside.jpg">
+          <img src="images/bedroomfront.jpg">
+          <img src="images/couchorange.jpg">
+          <img src="images/bathroom2.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="twobath">
+      <h2 class="content-head">2bedroom 2bath</h2>
+      <p>Please Contact for Pricing and Availabilty</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/smallbedroom.jpg">
+          <img src="images/bedbright.jpg">
+          <img src="images/kitchen1.jpg">
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="formContainer">
+    <form action="#">
+    <h2 class="form-heading">Contact Form</h2>
+    <label for="fname">First Name:</label>
+    <input placeholder="First Name" type="text" name="firstName" required="">
+    <label for="lname">Last Name:</label>
+    <input placeholder="Last Name" type="text" name="lastName" required="">
+    <label for="email">Email:</label>
+    <input placeholder="Email" type="email" name="customerEmail" required="">
+    <label for="phone">Phone:</label>
+    <input placeholder="Phone" type="tel" name="customerPhone" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <label for="comments">Additional Comment or Requests:</label>
+    <textarea type="text" name="comments"></textarea>
+    <input type="submit" value="Submit">
   </main>
   <footer>
     <section class='social'>

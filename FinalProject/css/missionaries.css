@@ -1,0 +1,96 @@
+.accommodations{
+  text-align: center;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.onebed, .twobed, .twobath{
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+/*############################## FORM ####################################*/
+
+main{
+  background-color: #ddd;
+  padding:30px 0;
+}
+.formContainer{
+  max-width:60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 60px;
+  background-color: white;
+  margin-top: 25px;
+}
+.form-heading{
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  color:#586F6B;
+  margin-top:0;
+  margin-bottom: 40px;
+}
+label{
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  color:#586F6B;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Raleway', 'sans serif';
+  color:#586F6B;
+}
+input[type=submit] {
+  background-color: #7F9183;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #586F6B;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 992px){
+  /*############################## FORM ################################*/
+  main{
+    padding:60px;
+  }
+  .formContainer{
+    max-width:50%;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
