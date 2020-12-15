@@ -1,7 +1,14 @@
+main{
+  color:#586F6B;
+}
+main h1{
+  text-align: center;
+}
 .accommodations{
   text-align: center;
   display:grid;
   grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
 }
 .onebed, .twobed, .twobath{
   text-align: center;
