@@ -1,6 +1,46 @@
 *{
   box-sizing: border-box;
 }
+.overlay-s{
+  position: absolute;
+  /* Position the background text */
+  bottom:0;
+  right:0;
+  /* At the bottom. Use top:0 to append it to the top */
+  color: #f1f1f1;
+  /* Grey text */
+  padding: 20px;
+  /* Some padding */
+  max-width: 100%;
+  text-align: right;
+}
+.overlay-m{
+  display:none;
+}
+.overlay-l{
+  display:none;
+}
+
+.top-left {
+  position: absolute;
+  /* Position the background text */
+  top: 0;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+  margin: 25px 25px;
+  padding: 20px;
+  /* Some padding */
+  max-width: 100%;
+  text-align: left;
+}
+
+.top-left p {
+  margin: 0 0;
+  font-family: 'Quicksand', sans-serif;
+}
 #sections{
   display:grid;
   padding:50px;
